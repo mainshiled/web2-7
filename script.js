@@ -100,7 +100,7 @@ function create_shader(id){
   if(gl.getShaderParameter(shader, gl.COMPILE_STATUS)){
 return shader;
   }else{
-    alert(gl.getShaderInforLog(shader));
+    alert(gl.getShaderInfoLog(shader));
   }
 }
   
