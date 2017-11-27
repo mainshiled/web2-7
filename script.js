@@ -82,7 +82,7 @@ function create_shader(id){
   
   if(!scriptElement){return;}
   
-  switch(!scriptElement.type){
+  switch(scriptElement.type){
     case 'x-shader/x-vertex':
        shader = gl.createShader(gl.VERTEX_SHADER);
       break;
