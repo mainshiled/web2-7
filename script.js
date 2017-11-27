@@ -141,9 +141,11 @@ return shader;
     
     for(var i in vbo){
       
-      gl.bindBuffer(gl.ARRAY_BUFER, vbo[i];
+      gl.bindBuffer(gl.ARRAY_BUFFER, vbo[i]);
+      
+      gl.enableVertexAttribArray(attL[i]);
                     
-                    gl.vertexAttribPointer(attL[i], attS[i], gl.FLOAT, false, 0, 0);
+      gl.vertexAttribPointer(attL[i], attS[i], gl.FLOAT, false, 0, 0);
     }
   }
     
