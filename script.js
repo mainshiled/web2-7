@@ -77,7 +77,7 @@ gl.drawArrays(gl.TRIANGELS, 0, 3);
     setTimeout(arguments.callee, 1000 / 30);
   })();
   
-fuction create_shader(id){
+function create_shader(id){
   
   var shader;
   
