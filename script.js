@@ -81,7 +81,7 @@ function create_shader(id){
   
   var shader;
   
-  var scriptElement =document.getElementById(id);
+  var scriptElement = document.getElementById(id);
   
   if(!scriptElement){return;}
   
@@ -90,13 +90,13 @@ function create_shader(id){
        shader = gl.createShader(gl.VERTEX_SHADER);
       break;
     case 'x-shader/x-fragment':
-      shader = gl.createShader(l.FRAGMENT_SHADER);
+      shader = gl.createShader(gl.FRAGMENT_SHADER);
       break;
     default:
       return;
   }
   
-  gl.shaderSorce(shader, scriptElement.text);
+  gl.shaderSource(shader, scriptElement.text);
   
   gl.compileShader(shader);
   
