@@ -6,6 +6,17 @@ canvas.height = 300;
 
 var gl = canvas.getCotext('webgl') || canvas.getCotext('experiental-webgl');
 
+  var v_shader = create_shader('vs');
+  var f_shader = create_shader('fs');
+  
+  var prg = create_program(v_shader, f_shader);
+  
+  var attLocation = new Array(2);
+  attLocation[0] = gl.getAttribLocation(prg, 'position');
+  attLocation[1] = gl.getAttribLocation(prg, 'color'); 
+  
+  var uniLocation = g.getUnifromLocation(prg, 'mvpMatrix');
+  
 gl.clear(0.0, 0.0, 0.0, 1.0);
 gl.clear(gl.COLOR_BUFER_BIT);
 
