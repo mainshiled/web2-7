@@ -107,7 +107,7 @@ return shader;
   }
 }
   
-  function creae_program(vs, fs){
+  function create_program(vs, fs){
     
     var program = gl.createProgram();
     
