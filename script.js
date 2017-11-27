@@ -4,7 +4,7 @@ var canvas = document.getElementById('canvas');
 canvas.width = 500;
 canvas.height = 300;
 
-var gl = canvas.getContext('webgl') || canvas.getContext('experiental-webgl');
+var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 
   var v_shader = create_shader('vs');
   var f_shader = create_shader('fs');
