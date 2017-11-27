@@ -64,7 +64,7 @@ var rad = (count% 360) * Math.PI / 180;
 
 m.identity(wMatrix);
 m.traslate(wMatrix, [1.0, -1.0, 0.0],wMatrix);
-m.rotate(wMatrix rad [0,1,0], wMatrix);
+m.rotate(wMatrix, rad [0,1,0], wMatrix);
 
 m.multiply(vpMatrix, wMatrix,wvpMatrix);
 gl.uniformMatrix4fv(uniLocation, false, wvpMatrix);
