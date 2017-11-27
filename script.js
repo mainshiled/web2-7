@@ -33,13 +33,10 @@ var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
   var pos_vbo = create_vbo(position);
   var col_vbo = create_vbo(color);
   
-  set_atteibute([pos_vbo, col_vbo],attLocation, attStride);
+  set_attribute([pos_vbo, col_vbo],attLocation, attStride);
  
-  var uniLocation = gl.getUnifromLocation(prg, 'mvpMatrix');
+  var uniLocation = gl.getUniformLocation(prg, 'mvpMatrix');
   
-gl.clear(0.0, 0.0, 0.0, 1.0);
-gl.clear(gl.COLOR_BUFER_BIT);
-
 var m = new matIV();
 
 var wMatrix = m.identity(m.create());
