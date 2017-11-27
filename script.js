@@ -86,10 +86,10 @@ function create_shader(id){
   if(!scriptElement){return;}
   
   switch(!scriptElement.type){
-      case 'x-shader/x-vertex';
+    case 'x-shader/x-vertex':
        shader = gl.createShader(gl.VERTEX_SHADER);
       break;
-       case 'x-shader/x-fragment';
+    case 'x-shader/x-fragment':
       shader = gl.createShader(l.FRAGMENT_SHADER);
       break;
     default:
